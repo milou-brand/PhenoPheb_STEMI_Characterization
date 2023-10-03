@@ -1,0 +1,321 @@
+---
+title: "| RESEARCH PROTOCOL\n| \n| Characterization of acute ST elevation myocardial infarction (STEMI) patients \n"
+fontsize: 12pt
+geometry: margin=1in
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../docs") })
+output:
+  bookdown::html_document2:
+    df_print: paged
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    number_sections: yes
+    number_tables: yes
+    css: style.css
+  word_document:
+    reference_docx: ohdsi-protocol-style.docx
+  bookdown::pdf_document2:
+    keep_tex: yes
+    latex_engine: xelatex
+    md_extensions: +raw_attribute
+    number_sections: yes
+    includes:
+      before_body: title.tex
+header-includes:
+- \usepackage[numbers,sort&compress]{natbib}
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+- \usepackage{threeparttablex}
+- \usepackage[normalem]{ulem}
+- \usepackage{makecell}
+- \usepackage{caption}
+- \usepackage{rotating}
+- \usepackage{multirow}
+- \usepackage{mwe,tikz}
+- \usepackage[percent]{overpic}
+- \usepackage{enumitem}
+- \usepackage{hyperref}
+- \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+- \newcommand{\footerDate}{`r params$date`}
+- \input{header.tex}
+longtable: yes
+mainfont: Arial
+bibliography: Protocol.bib
+params:
+  date: "03-10-2023"
+  version: 0.0.1
+subtitle: 'Version: `r params$version`'
+link-citations: yes
+csl: bmj.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
+options(kableExtra.latex.load_packages = FALSE)
+library(kableExtra)
+library(dplyr)
+options(knitr.kable.NA = "")
+options(knitr.table.format = function() {
+  if (knitr::is_latex_output()) {
+    "latex"
+  } else if (knitr::is_html_output()) {
+    "html"
+  } else {
+    "pipe"
+  }
+})
+
+latex_table_font_size <- 8
+```
+
+# List of Abbreviations
+
+```{r abbreviations, echo=FALSE}
+abbreviations <- readr::read_delim(show_col_types = FALSE, col_names = FALSE, delim = ";", trim_ws = TRUE, file = "
+EMR;				Electronic Medical Records
+GPP;			Good Pharmacoepidemiology Practices
+IRB;				Institutional Review Board
+ISPE;				International Society for Pharmacoepidemiology
+OHDSI;			Observational Health Data Science and Informatics
+OMOP CDM;		Observational Medical Outcomes Partnership Common Data Model
+RWD;				Real-World Data
+RWE;				Real-World Evidence
+STEMI;			ST-elevation myocardial infarction
+")
+
+tab <- kable(abbreviations, col.names = NULL, linesep = "", booktabs = TRUE)
+
+if (knitr::is_latex_output()) {
+  tab %>% kable_styling(latex_options = c("striped", "hold_position"), 
+                        font_size = latex_table_font_size)
+} else {
+  tab %>% kable_styling(bootstrap_options = "striped")
+}
+```
+
+\clearpage
+
+# Responsible Parties
+
+## Investigators
+
+```{r parties, echo=FALSE}
+parties <- readr::read_delim(show_col_types = FALSE, col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
+  Investigator; Institution/Affiliation
+  Atif Adam; Associate Director of Epidemiology, OMOP, IQVIA
+  Milou Brand ; Senior Data Scientist, OMOP, IQVIA
+  Dr Mirza Khan ; Fellow in Cardiovascular Outcomes Research, University of Missouri-Kansas City, Saint Luke’s Mid America Heart Institute
+")
+
+tab <- kable(parties, booktabs = TRUE, linesep = "") %>%
+  column_spec(1, width = "10em") %>%
+  column_spec(2, width = "35em") %>%
+  footnote(general = "* Principal Investigator", general_title = "")
+
+if (knitr::is_latex_output()) {
+  tab %>% kable_styling(latex_options = c("striped", "hold_position"),
+                        font_size = latex_table_font_size)
+} else {
+  tab %>% kable_styling(bootstrap_options = "striped")
+}
+```
+
+## Disclosures
+
+This study is undertaken within Observational Health Data Sciences and Informatics (OHDSI), an open collaboration.
+
+\clearpage
+
+# Abstract
+
+**Background and Significance**: 
+
+**Study Aims**: 
+
+**Study Description**: 
+
+* **Population**: 
+
+* **Comparators**:
+  
+* **Outcomes**:
+  
+* **Design**: 
+
+* **Timeframe**: 
+
+\clearpage
+
+# Amendments and Updates
+
+```{r amendments, echo=FALSE}
+amendments <- readr::read_delim(show_col_types = FALSE,col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
+  Number; Date; Section of study protocol; Amendment or update; Reason
+")
+
+tab <- kable(amendments, booktabs = TRUE, linesep = "")
+
+if (knitr::is_latex_output()) {
+  tab %>% kable_styling(latex_options = c("striped", "hold_position"), font_size = latex_table_font_size)
+} else {
+  tab %>% kable_styling(bootstrap_options = "striped")
+}
+```
+
+# Milestones
+
+```{r dates, echo=FALSE}
+dates <- readr::read_delim(show_col_types = FALSE,col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
+  Milestone; Planned / actual date
+  Identify data partners; October 2023
+  Data partners to share data diagnostics results; October 2023
+  Complete candidate phenotypes; October 2023
+  Data partners to share phenotype diagnostics results; November 2023
+  Finalize analytic package; November 2023
+  Data partners to run analytic package; November 2023
+  Data partners to share study diagnostic results; November 2023
+  Finalize results from data partners; December 2023
+  Manuscript drafting and writing; early 2024
+  Submit abstract: ICPE (February 2024), OHDSI EU Symposium; early 2024
+
+")
+
+tab <- kable(dates, booktabs = TRUE, linesep = "")
+
+if (knitr::is_latex_output()) {
+  tab %>% kable_styling(latex_options = c("striped", "hold_position"), font_size = latex_table_font_size)
+} else {
+  tab %>% kable_styling(bootstrap_options = "striped")
+}
+```
+
+# Rationale and Background
+
+Acute myocardial infarction (AMI) is a frequent cause of hospital admission in the United States and is associated with significant short- and long-term mortality and morbidity. Every 42 seconds, approximately 1 American will suffer an AMI, and the estimated annual incidences of new and recurrent MI events are 550 000 and 200 000 events, respectively [1] .
+
+As defined in the 4th Universal Definition of Myocardial Infarction (UDMI) defines acute ST-elevation myocardial infarction (STEMI) as requiring a rise and/or fall of cardiac troponin (cTn) values (with at least 1 value > 99th percentile) and clinical evidence of ischemia (i.e., symptoms, ECG changes, supportive ECG or other imaging findings, or evidence of coronary thrombus) [2] . The underlying etiology is plaque disruption with coronary atherothrombosis [3, 4, 5] . Acute STEMI can manifest as: hyperacute T-wave changes, true posterior MI, multilead ST depression with coexistent ST elevation in lead aVR, characteristic diagnostic criteria in the setting of left bundle branch block [6] . 
+
+In a systematic review of computable phenotypes for patients with Acute MI (includes STEMI, NSTEMI), Rubbo et al. (2015) found that the vast majority rely on structured data, in particular ICD codes [7] .  Previous studies have used ICD-9 and ICD-10 codes: 410, 410.21, 410.31, 410.41, 410.01, 410.11, 410.51, 410.61, 410.81, 410.91, I21, I21.11, I21.19, I21.21, I21.01, I21.02, I21.09, I21.29, I21.3 to identify acute STEMI patients [8, 9, 10] . More recently, Somani et al. find improved PPV by combining keyword search of discharge summaries and electrocardiogram (ECG) readings [8] . 
+
+To be designated STEMI sites, hospitals will try to adherence to performance measures and reporting. These performance measures to benchmark and improve the quality of care for patients with STEMI and NSTEMI were outlined in the 2017 AHA/ACC Clinical Performance [11] . The priority with patients presenting with an acute STEMI is revascularization. When there is enough degree of suspicion for STEMI, patients are immediately treated with aspirin and/or P2Y12 inhibitor as the evaluation (labs, ECG) are underway. The cardiac catheterization lab is activated and the patient is taken for urgent revascularization, ideally by percutaneous coronary intervention (PCI). Post-PCI, patients are often cared for in the intensive care unit. The current study used STEMI diagnosis codes as well as some of the above-mentioned performance measures to phenotype acute STEMI patients. For example, measures included are cardiac troponin lab values, ECG measurements, and cardiac catheterization, often involving stent placement. 
+
+In general, STEMI patients account for 29% to 47% of all AMI patients [12, 13] . A study by Yeh and colleagues looked at STEMI and NSTEMI in a community-based population (Northern California)  and found that that age- and sex-adjusted incidence rates of AMI have significantly decreased after 2000 [14] . In general, the proportion of STEMI versus NSTEMI events varies in different registries and depends on the age of patients, their geographic location, and the type of surveillance used.
+
+Given the acuity and “need for speed” in treating acute STEMI cases, accurate and scalable generalizable identification, characterization, and current incidence of STEMI in multi-country real-world data has many benefits. For example, informing on resource allocation, campaigns to improve heart attack recognition, cardiovascular health, and risk factor modification, etc. This comprehensive study aims to understand STEMI patients’ characteristics and identify the incidence rates across multiple real-world data datasets. 
+
+# Study Objectives
+
+1.	To understand the patients’ characteristics of acute STEMI patients.
+
+2.	To understand incidence rates of acute STEMI patients.
+
+# Research Methods
+
+## Study Design
+
+This will be a retrospective cohort study of patients diagnosed with acute STEMI. Data sources will be administrative claims or electronic health record (EHR) data mapped to the OMOP CDM across the OHDSI network.
+
+## Study Population
+The primary study population will consist of adult patients with an acute STEMI diagnosis identified in the data sources. Study cohorts and the corresponding index dates have been defined to address study objectives.
+
+The overall study period will span from January 1, 2016, up to the most recent data available for the given data sources. The end date will vary depending on data sources.
+
+## Analysis
+
+Although the primary aim of this study is a characterization study, various standardized analytics available in the OHDSI community will be applied. The Strategus pipeline will be used to call various packages in the HADES library for A) data characterization (A1-cohort diagnostics, A2-cohort features, A3-incidence rates).26,27
+
+### Data Characterization
+#### Cohort Diagnostics
+The R package CohortDiagnostics will be executed for all target, comparator, indication, and outcome cohorts to evaluate measurement error in the phenotype development and evaluation process.28
+
+####	Cohort Features
+The Characterization and FeatureExtraction packages in HADES will be used to identify features of patients in each exposure group who had the outcome and those who did not have the outcome.27 Features will be extracted from the 365 day observation prior to cohort entry and will include variables such as demographic data (sex, age group, race, ethnicity), prior conditions/drug exposures/procedures/measurements/devices/observations, and risk scores (e.g., Charlson comorbidity index, DCSI, CHADS2VASC score).
+
+#### Incidence Rates
+The Characterization package in HADES will be used to calculate the incidence rates of the outcome for each exposure cohort and indication cohort. The rate is calculated as the number of outcomes during the time-at-risk divided by the number of total person days.
+
+# Strengths and Limitations {#strengths-limitations}
+
+When executed, this will be the largest study examining the characterization and incidence rates of STEMI patients. Other strengths of this study include the diversity of the sample (from multiple institutions and multiple countries).
+
+Limitations are mainly due to the retrospective nature of the study. Real-world EMR and claims-based data sources are not traditionally collected for research purposes and reflect information that had been collected for continued patient care, which means that data could be missing and coding errors are possible.
+
+# Protection of Human Subjects
+
+This study will be conducted in accordance with Good Pharmacoepidemiology Practices (GPP). Observational databases where the information about patients is anonymized will be used in this study. Therefore, this study falls under general public health research provisions and there is no need to obtain informed consent from patients. All applicable data protection, security and privacy laws, rules, and regulations with respect to the collection, production, use, processing, storage, transfer, modification, deletion, and/or disclosure of any information related to this study will be complied with. 
+
+##	Participant consent to release information 
+
+As this is an observational study that uses data previously collected and does not impose any form of intervention, the data have been deidentified to protect participant privacy. Therefore, a formal consent to release information form is not required.
+
+##	Ethical review and regulatory considerations 
+
+When applicable and required by local laws and regulations, observational studies will be submitted to IRBs for approval or waivers and regulatory authorities will be notified and sought for approval. This study will be conducted in accordance with the ethical principles that have their origin in the Declaration of Helsinki and that are consistent with the International Society for Pharmacoepidemiology (ISPE) Guidelines for GPP [30] and applicable laws and regulations of the country or countries where the study is being conducted, as appropriate.
+
+# Management and Reporting of Adverse Events and Adverse Reactions
+
+Based on current guidelines from the ISPE Guidelines for GPP [30], RWE studies analyzing aggregated data only, such as this one conducted, do not require reporting of adverse events or adverse reactions. The study results will be assessed for medically important results including potential safety signals.
+
+# Plans for Disseminating and Communicating Study Results
+
+The results will be shared and discussed among the study participants and broader OHDSI network. 
+
+\clearpage
+
+# References {-}
+
+<div id="refs"></div>
+ 1.  Mozaffarian D, Benjamin EJ, Go AS, et al. Heart disease and stroke statistics−2016 update: a report from the American Heart Association. Circulation. 2016; 133:e38–360. 
+
+ 2.  Thygesen K, Alpert J, Jaffe A, et al. Fourth Universal Definition of Myocardial Infarction (2018). J Am Coll Cardiol. 2018 Oct, 72 (18) 2231–2264.
+
+ 3.  Asatryan B, Vaisnora L, Manavifar N. Electrocardiographic Diagnosis of Life-Threatening STEMI Equivalents. JACC: Case Reports. 2019;1(4):666-668. doi:10.1016/j.jaccas.2019.10.030
+ 
+ 4.  Thygesen K, Alpert JS, Jaffe AS, et al. Fourth Universal Definition of Myocardial Infarction (2018). Circulation. 2018;138(20). doi:10.1161/cir.000000000000061
+ 
+ 5.  Bergmark, B. A., Mathenge, N., Merlini, P. A., Lawrence-Wright, M. B., & Giugliano, R. P. (2022). Acute coronary syndromes. The Lancet, 399(10332), 1347–1358. https://doi.org/10.1016/S0140-6736(21)02391-6
+
+ 6.  Jneid H, Addison D, Bhatt DL, Fonarow GC, Gokak S, Grady KL, Green LA, Heidenreich PA, Ho PM, Jurgens CY, King ML, Kumbhani DJ, Pancholy S. 2017 AHA/ACC Clinical Performance and Quality Measures for Adults With ST-Elevation and Non-ST-Elevation Myocardial Infarction: A Report of the American College of Cardiology/American Heart Association Task Force on Performance Measures. J Am Coll Cardiol. 2017 Oct 17;70(16):2048-2090. doi: 10.1016/j.jacc.2017.06.032. Epub 2017 Sep 21. PMID: 28943066. 
+
+ 7. Rubbo B, Fitzpatrick NK, Denaxas S, et al. Use of electronic health records to ascertain, validate and phenotype acute myocardial infarction: A systematic review and recommendations. International Journal of Cardiology. 2015;187:705-711. doi:10.1016/j.ijcard.2015.03.075
+
+ 8.  Somani S, Yoffie S, Teng S, et al. Development and validation of techniques for phenotyping ST-elevation myocardial infarction encounters from electronic health records. JAMIA Open. 2021;4(3). doi:10.1093/jamiaopen/ooab068
+
+ 9.  Coloma PM, Valkhoff VE, Mazzaglia G, et al. Identification of acute myocardial infarction from electronic healthcare records using different disease coding systems: a validation study in three European countries. BMJ Open. 2013;3(6):e002862. doi:10.1136/bmjopen-2013-002862
+
+ 10.  Patel AB, Quan H, Welsh RC, et al. Validity and utility of ICD-10 administrative health data for identifying ST- and non-ST-elevation myocardial infarction based on physician chart review. CMAJ Open. 2015;3(4):E413-E418. doi:10.9778/cmajo.20150060
+
+ 11.  (2017 AHA/ACC Clinical Performance and Quality Measures for Adults With ST-Elevation and Non–ST-Elevation Myocardial Infarction: A Report of the American College of Cardiology/American Heart Association Task Force on Performance Measures
+Hani Jneid, Daniel Addison, Deepak L. Bhatt, Gregg C. Fonarow, Sana Gokak, Kathleen L. Grady, Lee A. Green, Paul A. Heidenreich, P. Michael Ho, Corrine Y. Jurgens, Marjorie L. King, Dharam J. Kumbhani and Samir Pancholy
+
+ 12.  Roe MT, Parsons LS, Pollack CV, et al. Quality of care by classification of myocardial infarction: treatment patterns for ST-segment elevation vs non-ST-segment elevation myocardial infarction. Arch Intern Med. 2005; 165:1630–6.
+
+ 13.  Mandelzweig L, Battler A, Boyko V, et al. The second Euro Heart Survey on acute coronary syndromes: characteristics, treatment, and outcome of patients with ACS in Europe and the Mediterranean Basin in 2004. Eur Heart J. 2006; 27:2285–93.
+
+ 14.  Yeh RW, Sidney S, Chandra M, et al. Population trends in the incidence and outcomes of acute myocardial infarction. N Engl J Med. 2010; 362:2155–65
+
+\clearpage
+
+\centerline{\Huge Appendix}
+
+# (APPENDIX) Appendix {-}
+
+# Cohort Definitions
+
+```{r appendix,  echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+source("https://raw.githubusercontent.com/ohdsi-studies/LegendT2dm/master/R/PrettyOutput.R")
+
+printCohortDefinitionFromNameAndJson(name = "STEMI Cohort",
+                                     json = SqlRender::readSql("STEMICohort.json"),
+                                     withConcepts = TRUE)
+```
+
