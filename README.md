@@ -10,7 +10,7 @@ Characterization of acute ST elevation myocardial infarction (STEMI) patients
 * Study lead forums tag: [[mbrand]](https://forums.ohdsi.org/u/[mbrand])
 * Study start date: [01] [10], [2023]
 * Study end date: -
-* Protocol: [[here]] (https://github.com/milou-brand/PhenoPheb_STEMI_Characterization/tree/master/Protocol)
+* Protocol: [[protocol here]](https://github.com/milou-brand/PhenoPheb_STEMI_Characterization/tree/master/Protocol)
 * Publications: -
 * Results explorer: -
 
