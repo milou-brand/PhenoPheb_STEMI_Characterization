@@ -118,8 +118,7 @@ parties <- readr::read_delim(show_col_types = FALSE, col_names = TRUE, delim = "
 
 tab <- kable(parties, booktabs = TRUE, linesep = "") %>%
   column_spec(1, width = "10em") %>%
-  column_spec(2, width = "35em") %>%
-  footnote(general = "* Principal Investigator", general_title = "")
+  column_spec(2, width = "35em")
 
 if (knitr::is_latex_output()) {
   tab %>% kable_styling(latex_options = c("striped", "hold_position"),
