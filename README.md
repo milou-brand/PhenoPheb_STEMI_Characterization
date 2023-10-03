@@ -8,7 +8,7 @@ Characterization of acute ST elevation myocardial infarction (STEMI) patients
 * Tags: Acute, STEMI, Myocardial infarction
 * Study lead:  Milou Brand, Atif Adam, and Mirza Khan
 * Study lead forums tag: [[mbrand]](https://forums.ohdsi.org/u/[mbrand])
-* Study start date: [02] [01], [2023]
+* Study start date: [01] [10], [2023]
 * Study end date: -
 * Protocol: -
 * Publications: -
