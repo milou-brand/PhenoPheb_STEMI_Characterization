@@ -15,3 +15,5 @@ Characterization of acute ST elevation myocardial infarction (STEMI) patients
 * Results explorer: -
 
 **Decription**: Given the acuity and “need for speed” in treating acute STEMI cases, accurate and scalable generalizable identification, characterization, and current incidence of STEMI in multi-country real-world data has many benefits. For example, informing on resource allocation, campaigns to improve heart attack recognition, cardiovascular health, and risk factor modification, etc. This comprehensive study aims to understand STEMI patients’ characteristics and identify the incidence rates across multiple real-world data datasets.    
+
+The idea is to publish this study in OHDSI symposiums as well as other cardiology journals.
