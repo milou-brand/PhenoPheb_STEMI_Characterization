@@ -1,687 +1,16 @@
 {
   "ConceptSets": [
     {
-      "id": 22,
-      "name": "[OHDSI STEMI] Fibrinolytics drugs",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "10106",
-              "CONCEPT_ID": 19136187,
-              "CONCEPT_NAME": "streptokinase",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "8410",
-              "CONCEPT_ID": 1347450,
-              "CONCEPT_NAME": "alteplase",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "76895",
-              "CONCEPT_ID": 19024191,
-              "CONCEPT_NAME": "reteplase",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "259280",
-              "CONCEPT_ID": 19098548,
-              "CONCEPT_NAME": "tenecteplase",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 25,
-      "name": "[Novavax] Betablockers",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "ATC 3rd",
-              "CONCEPT_CODE": "C07A",
-              "CONCEPT_ID": 21601665,
-              "CONCEPT_NAME": "BETA BLOCKING AGENTS",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "ATC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "ATC 3rd",
-              "CONCEPT_CODE": "C07B",
-              "CONCEPT_ID": 21601701,
-              "CONCEPT_NAME": "BETA BLOCKING AGENTS AND THIAZIDES",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "ATC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "ATC 3rd",
-              "CONCEPT_CODE": "C07C",
-              "CONCEPT_ID": 21601718,
-              "CONCEPT_NAME": "BETA BLOCKING AGENTS AND OTHER DIURETICS",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "ATC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "ATC 3rd",
-              "CONCEPT_CODE": "C07D",
-              "CONCEPT_ID": 21601730,
-              "CONCEPT_NAME": "BETA BLOCKING AGENTS, THIAZIDES AND OTHER DIURETICS",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "ATC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "ATC 3rd",
-              "CONCEPT_CODE": "C07E",
-              "CONCEPT_ID": 21601735,
-              "CONCEPT_NAME": "BETA BLOCKING AGENTS AND VASODILATORS",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "ATC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "ATC 3rd",
-              "CONCEPT_CODE": "C07F",
-              "CONCEPT_ID": 21601738,
-              "CONCEPT_NAME": "BETA BLOCKING AGENTS, OTHER COMBINATIONS",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "ATC"
-            },
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 26,
-      "name": "[Abbott] - ACE inhibitors",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "18867",
-              "CONCEPT_ID": 1335471,
-              "CONCEPT_NAME": "benazepril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "21102",
-              "CONCEPT_ID": 19050216,
-              "CONCEPT_NAME": "cilazapril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "3827",
-              "CONCEPT_ID": 1341927,
-              "CONCEPT_NAME": "enalapril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "3829",
-              "CONCEPT_ID": 1342001,
-              "CONCEPT_NAME": "enalaprilat",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "50166",
-              "CONCEPT_ID": 1363749,
-              "CONCEPT_NAME": "fosinopril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "29046",
-              "CONCEPT_ID": 1308216,
-              "CONCEPT_NAME": "lisinopril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "30131",
-              "CONCEPT_ID": 1310756,
-              "CONCEPT_NAME": "moexipril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "54552",
-              "CONCEPT_ID": 1373225,
-              "CONCEPT_NAME": "perindopril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "35208",
-              "CONCEPT_ID": 1331235,
-              "CONCEPT_NAME": "quinapril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "38454",
-              "CONCEPT_ID": 1342439,
-              "CONCEPT_NAME": "trandolapril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "1998",
-              "CONCEPT_ID": 1340128,
-              "CONCEPT_NAME": "captopril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "39990",
-              "CONCEPT_ID": 19102107,
-              "CONCEPT_NAME": "zofenopril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "36908",
-              "CONCEPT_ID": 19040051,
-              "CONCEPT_NAME": "spirapril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "60245",
-              "CONCEPT_ID": 19122327,
-              "CONCEPT_NAME": "imidapril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "35296",
-              "CONCEPT_ID": 1334456,
-              "CONCEPT_NAME": "ramipril",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 27,
-      "name": "[Abbott] Angiotensin receptor blockers (ARBs)",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "1091643",
-              "CONCEPT_ID": 40235485,
-              "CONCEPT_NAME": "azilsartan",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "214354",
-              "CONCEPT_ID": 1351557,
-              "CONCEPT_NAME": "candesartan",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "83515",
-              "CONCEPT_ID": 1346686,
-              "CONCEPT_NAME": "eprosartan",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "83818",
-              "CONCEPT_ID": 1347384,
-              "CONCEPT_NAME": "irbesartan",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "52175",
-              "CONCEPT_ID": 1367500,
-              "CONCEPT_NAME": "losartan",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "321064",
-              "CONCEPT_ID": 40226742,
-              "CONCEPT_NAME": "olmesartan",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "73494",
-              "CONCEPT_ID": 1317640,
-              "CONCEPT_NAME": "telmisartan",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Ingredient",
-              "CONCEPT_CODE": "69749",
-              "CONCEPT_ID": 1308842,
-              "CONCEPT_NAME": "valsartan",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 29,
-      "name": "[OHDSI STEMI] Aspirin 81 mg",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Drug Comp",
-              "CONCEPT_CODE": "315431",
-              "CONCEPT_ID": 1113309,
-              "CONCEPT_NAME": "aspirin 81 MG",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 30,
-      "name": "[OHDSI STEMI] high-intensity statin",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Drug Comp",
-              "CONCEPT_CODE": "597983",
-              "CONCEPT_ID": 1545994,
-              "CONCEPT_NAME": "atorvastatin 40 MG",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Drug Comp",
-              "CONCEPT_CODE": "329299",
-              "CONCEPT_ID": 1545961,
-              "CONCEPT_NAME": "atorvastatin 80 MG",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Drug Comp",
-              "CONCEPT_CODE": "2167564",
-              "CONCEPT_ID": 789825,
-              "CONCEPT_NAME": "rosuvastatin 20 MG",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Drug Comp",
-              "CONCEPT_CODE": "2167568",
-              "CONCEPT_ID": 789829,
-              "CONCEPT_NAME": "rosuvastatin 40 MG",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "RxNorm"
-            },
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 31,
-      "name": "[Bayer] Antiplatelet class",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Component Class",
-              "CONCEPT_CODE": "46116",
-              "CONCEPT_ID": 35807468,
-              "CONCEPT_NAME": "Antiplatelet agent",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "HemOnc"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Component Class",
-              "CONCEPT_CODE": "46303",
-              "CONCEPT_ID": 35101523,
-              "CONCEPT_NAME": "Antiplatelet agents",
-              "DOMAIN_ID": "Drug",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "HemOnc"
-            },
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 34,
-      "name": "[OHDSI STEMI] common co-occurring conditions",
+      "id": 44,
+      "name": "[OHDSI STEMI] STEMI ICD concept set",
       "expression": {
         "items": [
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Clinical Finding",
-              "CONCEPT_CODE": "89138009",
-              "CONCEPT_ID": 198571,
-              "CONCEPT_NAME": "Cardiogenic shock",
-              "DOMAIN_ID": "Condition",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Finding",
-              "CONCEPT_CODE": "29857009",
-              "CONCEPT_ID": 77670,
-              "CONCEPT_NAME": "Chest pain",
+              "CONCEPT_CODE": "401303003",
+              "CONCEPT_ID": 4296653,
+              "CONCEPT_NAME": "Acute ST segment elevation myocardial infarction",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -695,1031 +24,16 @@
       }
     },
     {
-      "id": 37,
-      "name": "[OHDSI STEMI] Troponin measurement",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "LOINC Hierarchy",
-              "CONCEPT_CODE": "LP385946-1",
-              "CONCEPT_ID": 37045968,
-              "CONCEPT_NAME": "Troponin T.cardiac | Serum or Plasma | Chemistry - non-challenge",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "LOINC Hierarchy",
-              "CONCEPT_CODE": "LP385942-0",
-              "CONCEPT_ID": 37063873,
-              "CONCEPT_NAME": "Troponin I.cardiac | Serum or Plasma | Chemistry - non-challenge",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Observable Entity",
-              "CONCEPT_CODE": "1015261000000102",
-              "CONCEPT_ID": 37393304,
-              "CONCEPT_NAME": "Serum troponin T level",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "LOINC Hierarchy",
-              "CONCEPT_CODE": "LP387081-5",
-              "CONCEPT_ID": 37075202,
-              "CONCEPT_NAME": "Troponin T.cardiac panel | Serum or Plasma | Chemistry Panels",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "LOINC Group",
-              "CONCEPT_CODE": "LG13250-2",
-              "CONCEPT_ID": 40653875,
-              "CONCEPT_NAME": "Troponin T.cardiac|Presence or Threshold|Moment in time|Blood, Serum or Plasma",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "LOINC Hierarchy",
-              "CONCEPT_CODE": "LP387080-7",
-              "CONCEPT_ID": 37040477,
-              "CONCEPT_NAME": "Troponin I.cardiac panel | Serum or Plasma | Chemistry Panels",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "LOINC Group",
-              "CONCEPT_CODE": "LG433-9",
-              "CONCEPT_ID": 40653873,
-              "CONCEPT_NAME": "Troponin I.cardiac|Mass Concentration|Moment in time|Blood, Serum or Plasma",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "LOINC Group",
-              "CONCEPT_CODE": "LG19584-8",
-              "CONCEPT_ID": 40653874,
-              "CONCEPT_NAME": "Troponin T.cardiac|Mass Concentration|Moment in time|Blood, Serum or Plasma",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "LOINC Hierarchy",
-              "CONCEPT_CODE": "LP385941-2",
-              "CONCEPT_ID": 37072384,
-              "CONCEPT_NAME": "Troponin I.cardiac | Blood | Chemistry - non-challenge",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "LOINC Hierarchy",
-              "CONCEPT_CODE": "LP385943-8",
-              "CONCEPT_ID": 37076644,
-              "CONCEPT_NAME": "Troponin I.cardiac | Serum, Plasma or Blood | Chemistry - non-challenge",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Observable Entity",
-              "CONCEPT_CODE": "1003361000000108",
-              "CONCEPT_ID": 37392380,
-              "CONCEPT_NAME": "Plasma troponin T level",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Observable Entity",
-              "CONCEPT_CODE": "1001251000000101",
-              "CONCEPT_ID": 37398480,
-              "CONCEPT_NAME": "Plasma troponin I level",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "105000003",
-              "CONCEPT_ID": 4021291,
-              "CONCEPT_NAME": "Troponin measurement",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Observable Entity",
-              "CONCEPT_CODE": "1001271000000105",
-              "CONCEPT_ID": 37392221,
-              "CONCEPT_NAME": "Serum troponin I level",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Observable Entity",
-              "CONCEPT_CODE": "1106491000000105",
-              "CONCEPT_ID": 37208546,
-              "CONCEPT_NAME": "Cardiac troponin T mass concentration in serum by high sensitivity technique",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Lab Test",
-              "CONCEPT_CODE": "89575-5",
-              "CONCEPT_ID": 36304662,
-              "CONCEPT_NAME": "Troponin T.cardiac [Interpretation] in Serum or Plasma Qualitative by High sensitivity method",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Lab Test",
-              "CONCEPT_CODE": "89578-9",
-              "CONCEPT_ID": 36304114,
-              "CONCEPT_NAME": "Troponin I.cardiac [Interpretation] in Serum or Plasma Qualitative by High sensitivity method",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Lab Test",
-              "CONCEPT_CODE": "89579-7",
-              "CONCEPT_ID": 36306105,
-              "CONCEPT_NAME": "Troponin I.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Lab Test",
-              "CONCEPT_CODE": "89577-1",
-              "CONCEPT_ID": 36305612,
-              "CONCEPT_NAME": "Troponin I.cardiac panel - Serum or Plasma by High sensitivity method",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Lab Test",
-              "CONCEPT_CODE": "89578-9",
-              "CONCEPT_ID": 36304114,
-              "CONCEPT_NAME": "Troponin I.cardiac [Interpretation] in Serum or Plasma Qualitative by High sensitivity method",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Lab Test",
-              "CONCEPT_CODE": "89579-7",
-              "CONCEPT_ID": 36306105,
-              "CONCEPT_NAME": "Troponin I.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "784261000000103",
-              "CONCEPT_ID": 44805124,
-              "CONCEPT_NAME": "High sensitivity cardiac troponin T measurement",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Observable Entity",
-              "CONCEPT_CODE": "1106481000000108",
-              "CONCEPT_ID": 37208545,
-              "CONCEPT_NAME": "Cardiac troponin I mass concentration in serum by high sensitivity technique",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Lab Test",
-              "CONCEPT_CODE": "67151-1",
-              "CONCEPT_ID": 40769783,
-              "CONCEPT_NAME": "Troponin T.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Lab Test",
-              "CONCEPT_CODE": "89576-3",
-              "CONCEPT_ID": 36303871,
-              "CONCEPT_NAME": "Troponin T.cardiac panel - Serum or Plasma by High sensitivity method",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 39,
-      "name": "[OHDSI STEMI] ECG obtained",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "LOINC Class",
-              "CONCEPT_CODE": "EKG",
-              "CONCEPT_ID": 45876202,
-              "CONCEPT_NAME": "Electrocardiogram",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "HCPCS",
-              "CONCEPT_CODE": "G8704",
-              "CONCEPT_ID": 40664798,
-              "CONCEPT_NAME": "12-lead electrocardiogram (ecg) performed",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "HCPCS"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
-              "CONCEPT_CODE": "1013012",
-              "CONCEPT_ID": 45889522,
-              "CONCEPT_NAME": "Electrocardiogram, routine ECG with at least 12 leads",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Observation",
-              "CONCEPT_CODE": "58253-6",
-              "CONCEPT_ID": 40761354,
-              "CONCEPT_NAME": "Electrocardiograms recorded",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Observation",
-              "CONCEPT_CODE": "34534-8",
-              "CONCEPT_ID": 3044889,
-              "CONCEPT_NAME": "12 lead EKG panel",
-              "DOMAIN_ID": "Measurement",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "LOINC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "29303009",
-              "CONCEPT_ID": 4163951,
-              "CONCEPT_NAME": "Electrocardiographic procedure",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 40,
-      "name": "[OHDSI STEMI] telemetry order",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "422952004",
-              "CONCEPT_ID": 4311995,
-              "CONCEPT_NAME": "Cardiac telemetry",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "0272T",
-              "CONCEPT_ID": 42742465,
-              "CONCEPT_NAME": "Interrogation device evaluation (in person), carotid sinus baroreflex activation system, including telemetric iterative communication with the implantable device to monitor device diagnostics and programmed therapy values, with interpretation and report (",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "0273T",
-              "CONCEPT_ID": 42742466,
-              "CONCEPT_NAME": "Interrogation device evaluation (in person), carotid sinus baroreflex activation system, including telemetric iterative communication with the implantable device to monitor device diagnostics and programmed therapy values, with interpretation and report (",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Physical Object",
-              "CONCEPT_CODE": "706636004",
-              "CONCEPT_ID": 45768376,
-              "CONCEPT_NAME": "Telemetric monitoring system",
-              "DOMAIN_ID": "Device",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Location",
-              "CONCEPT_CODE": "422798006",
-              "CONCEPT_ID": 4306818,
-              "CONCEPT_NAME": "Telemetry unit",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "252739000",
-              "CONCEPT_ID": 4098781,
-              "CONCEPT_NAME": "EEG telemetry",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "93229",
-              "CONCEPT_ID": 2313833,
-              "CONCEPT_NAME": "External mobile cardiovascular telemetry with electrocardiographic recording, concurrent computerized real time data analysis and greater than 24 hours of accessible ECG data storage (retrievable with query) with ECG triggered and patient selected events ",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 41,
-      "name": "[OHDSI STEMI] Intensive care unit",
-      "expression": {
-        "items": [
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Qualifier Value",
-              "CONCEPT_CODE": "310032008",
-              "CONCEPT_ID": 4149127,
-              "CONCEPT_NAME": "Intensive care service",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Qualifier Value",
-              "CONCEPT_CODE": "788128000",
-              "CONCEPT_ID": 37312471,
-              "CONCEPT_NAME": "Critical care medicine service",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Location",
-              "CONCEPT_CODE": "309904001",
-              "CONCEPT_ID": 4148981,
-              "CONCEPT_NAME": "Intensive care unit",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "HCPCS",
-              "CONCEPT_CODE": "S9480",
-              "CONCEPT_ID": 2721547,
-              "CONCEPT_NAME": "Intensive outpatient psychiatric services, per diem",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "HCPCS"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "HCPCS",
-              "CONCEPT_CODE": "G0390",
-              "CONCEPT_ID": 2617460,
-              "CONCEPT_NAME": "Trauma response team associated with hospital critical care service",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "HCPCS"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "306106002",
-              "CONCEPT_ID": 4127581,
-              "CONCEPT_NAME": "Referral to intensive care service",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
-              "CONCEPT_CODE": "1019140",
-              "CONCEPT_ID": 45887809,
-              "CONCEPT_NAME": "Initial and Continuing Intensive Care Services",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "305351004",
-              "CONCEPT_ID": 4138933,
-              "CONCEPT_NAME": "Admission to intensive care unit",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "182810003",
-              "CONCEPT_ID": 4057410,
-              "CONCEPT_NAME": "Intensive care monitoring",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "APC",
-              "CONCEPT_CODE": "5041",
-              "CONCEPT_ID": 722929,
-              "CONCEPT_NAME": "Critical Care",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "APC"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Visit",
-              "CONCEPT_CODE": "OMOP4822460",
-              "CONCEPT_ID": 32037,
-              "CONCEPT_NAME": "Intensive Care",
-              "DOMAIN_ID": "Visit",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "Visit"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
-              "CONCEPT_CODE": "1013729",
-              "CONCEPT_ID": 45889908,
-              "CONCEPT_NAME": "Critical Care Services",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "C",
-              "STANDARD_CONCEPT_CAPTION": "Classification",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Qualifier Value",
-              "CONCEPT_CODE": "700231006",
-              "CONCEPT_ID": 45763734,
-              "CONCEPT_NAME": "Critical care physician service",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Qualifier Value",
-              "CONCEPT_CODE": "408478003",
-              "CONCEPT_ID": 4256631,
-              "CONCEPT_NAME": "Critical care medicine",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "830077005",
-              "CONCEPT_ID": 3661417,
-              "CONCEPT_NAME": "Admission to neonatal intensive care unit",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Qualifier Value",
-              "CONCEPT_CODE": "741073001",
-              "CONCEPT_ID": 42538215,
-              "CONCEPT_NAME": "Neonatal intensive care service",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Location",
-              "CONCEPT_CODE": "405269005",
-              "CONCEPT_ID": 4231410,
-              "CONCEPT_NAME": "Neonatal intensive care unit",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "305353001",
-              "CONCEPT_ID": 4123933,
-              "CONCEPT_NAME": "Admission to pediatric intensive care unit",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "HCPCS",
-              "CONCEPT_CODE": "G9853",
-              "CONCEPT_ID": 1314526,
-              "CONCEPT_NAME": "Patient admitted to the icu in the last 30 days of life",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "HCPCS"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Qualifier Value",
-              "CONCEPT_CODE": "8261000175104",
-              "CONCEPT_ID": 764912,
-              "CONCEPT_NAME": "Pediatric critical care service",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Qualifier Value",
-              "CONCEPT_CODE": "310034009",
-              "CONCEPT_ID": 4147242,
-              "CONCEPT_NAME": "Pediatric intensive care service",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Location",
-              "CONCEPT_CODE": "309910001",
-              "CONCEPT_ID": 4148497,
-              "CONCEPT_NAME": "Pediatric intensive care unit",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "306108001",
-              "CONCEPT_ID": 4138522,
-              "CONCEPT_NAME": "Referral to pediatric intensive care service",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "99480",
-              "CONCEPT_ID": 2514572,
-              "CONCEPT_NAME": "Subsequent intensive care, per day, for the evaluation and management of the recovering infant (present body weight of 2501-5000 grams)",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "99479",
-              "CONCEPT_ID": 2514571,
-              "CONCEPT_NAME": "Subsequent intensive care, per day, for the evaluation and management of the recovering low birth weight infant (present body weight of 1500-2500 grams)",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "99478",
-              "CONCEPT_ID": 2514570,
-              "CONCEPT_NAME": "Subsequent intensive care, per day, for the evaluation and management of the recovering very low birth weight infant (present body weight less than 1500 grams)",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "isExcluded": true,
-            "includeDescendants": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 42,
-      "name": "[OHDSI STEMI] Echocardiogram",
+      "id": 45,
+      "name": "[OHDSI STEMI] non-STEMI ICD concept set",
       "expression": {
         "items": [
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Clinical Finding",
-              "CONCEPT_CODE": "169241000",
-              "CONCEPT_ID": 4059699,
-              "CONCEPT_NAME": "Echocardiogram abnormal",
+              "CONCEPT_CODE": "401314000",
+              "CONCEPT_ID": 4270024,
+              "CONCEPT_NAME": "Acute non-ST segment elevation myocardial infarction",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -1731,210 +45,30 @@
           },
           {
             "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "0613T",
-              "CONCEPT_ID": 759555,
-              "CONCEPT_NAME": "Percutaneous transcatheter implantation of interatrial septal shunt device, including right and left heart catheterization, intracardiac echocardiography, and imaging guidance by the proceduralist, when performed",
-              "DOMAIN_ID": "Procedure",
+              "CONCEPT_CLASS_ID": "Clinical Finding",
+              "CONCEPT_CODE": "15960061000119102",
+              "CONCEPT_ID": 36712982,
+              "CONCEPT_NAME": "Unstable angina co-occurrent and due to coronary arteriosclerosis",
+              "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
               "STANDARD_CONCEPT": "S",
               "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "0543T",
-              "CONCEPT_ID": 709890,
-              "CONCEPT_NAME": "Transapical mitral valve repair, including transthoracic echocardiography, when performed, with placement of artificial chordae tendineae",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
+              "VOCABULARY_ID": "SNOMED"
             },
             "includeDescendants": true
           },
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Context-dependent",
-              "CONCEPT_CODE": "401000009",
-              "CONCEPT_ID": 4292071,
-              "CONCEPT_NAME": "Echocardiogram requested",
+              "CONCEPT_CODE": "285721000119104",
+              "CONCEPT_ID": 37395582,
+              "CONCEPT_NAME": "History of acute ST segment elevation myocardial infarction",
               "DOMAIN_ID": "Observation",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "93356",
-              "CONCEPT_ID": 710016,
-              "CONCEPT_NAME": "Myocardial strain imaging using speckle tracking-derived assessment of myocardial mechanics (List separately in addition to codes for echocardiography imaging)",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "40701008",
-              "CONCEPT_ID": 4230911,
-              "CONCEPT_NAME": "Echocardiography",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "93321",
-              "CONCEPT_ID": 2313880,
-              "CONCEPT_NAME": "Doppler echocardiography, pulsed wave and/or continuous wave with spectral display (List separately in addition to codes for echocardiographic imaging); follow-up or limited study (List separately in addition to codes for echocardiographic imaging)",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "93320",
-              "CONCEPT_ID": 2313879,
-              "CONCEPT_NAME": "Doppler echocardiography, pulsed wave and/or continuous wave with spectral display (List separately in addition to codes for echocardiographic imaging); complete",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Finding",
-              "CONCEPT_CODE": "169240004",
-              "CONCEPT_ID": 4060628,
-              "CONCEPT_NAME": "Echocardiogram normal",
-              "DOMAIN_ID": "Condition",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "390791001",
-              "CONCEPT_ID": 4305721,
-              "CONCEPT_NAME": "Referral for echocardiography",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "93325",
-              "CONCEPT_ID": 2313881,
-              "CONCEPT_NAME": "Doppler echocardiography color flow velocity mapping (List separately in addition to codes for echocardiography)",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Finding",
-              "CONCEPT_CODE": "408380008",
-              "CONCEPT_ID": 4252226,
-              "CONCEPT_NAME": "Echocardiogram equivocal",
-              "DOMAIN_ID": "Condition",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Procedure",
-              "CONCEPT_CODE": "703338002",
-              "CONCEPT_ID": 45773079,
-              "CONCEPT_NAME": "Stress echocardiography using dobutamine",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "CPT4",
-              "CONCEPT_CODE": "0439T",
-              "CONCEPT_ID": 42628042,
-              "CONCEPT_NAME": "Myocardial contrast perfusion echocardiography, at rest or with stress, for assessment of myocardial ischemia or viability (List separately in addition to code for primary procedure)",
-              "DOMAIN_ID": "Procedure",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "CPT4"
-            },
-            "includeDescendants": true
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Observable Entity",
-              "CONCEPT_CODE": "421222001",
-              "CONCEPT_ID": 4222104,
-              "CONCEPT_NAME": "Ultrasonographic echogenicity",
-              "DOMAIN_ID": "Observation",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "STANDARD_CONCEPT": "N",
+              "STANDARD_CONCEPT_CAPTION": "Non-Standard",
               "VOCABULARY_ID": "SNOMED"
             },
             "includeDescendants": true
@@ -1943,7 +77,7 @@
       }
     },
     {
-      "id": 43,
+      "id": 46,
       "name": "[OHDSI STEMI] PCI with or without stent",
       "expression": {
         "items": [
@@ -2206,22 +340,114 @@
       }
     },
     {
-      "id": 44,
-      "name": "[OHDSI STEMI] STEMI ICD concept set",
+      "id": 47,
+      "name": "Inpatient visitv2",
       "expression": {
         "items": [
           {
             "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Finding",
-              "CONCEPT_CODE": "401303003",
-              "CONCEPT_ID": 4296653,
-              "CONCEPT_NAME": "Acute ST segment elevation myocardial infarction",
-              "DOMAIN_ID": "Condition",
+              "CONCEPT_CLASS_ID": "Visit",
+              "CONCEPT_CODE": "ERIP",
+              "CONCEPT_ID": 262,
+              "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
+              "DOMAIN_ID": "Visit",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "Visit"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Visit",
+              "CONCEPT_CODE": "IP",
+              "CONCEPT_ID": 9201,
+              "CONCEPT_NAME": "Inpatient Visit",
+              "DOMAIN_ID": "Visit",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "Visit"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "308283009",
+              "CONCEPT_ID": 4203130,
+              "CONCEPT_NAME": "Discharge from hospital",
+              "DOMAIN_ID": "Observation",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
               "STANDARD_CONCEPT": "S",
               "STANDARD_CONCEPT_CAPTION": "Standard",
               "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Visit",
+              "CONCEPT_CODE": "21",
+              "CONCEPT_ID": 8717,
+              "CONCEPT_NAME": "Inpatient Hospital",
+              "DOMAIN_ID": "Visit",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CMS Place of Service"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Visit",
+              "CONCEPT_CODE": "51",
+              "CONCEPT_ID": 8971,
+              "CONCEPT_NAME": "Inpatient Psychiatric Facility",
+              "DOMAIN_ID": "Visit",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CMS Place of Service"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Visit",
+              "CONCEPT_CODE": "61",
+              "CONCEPT_ID": 8920,
+              "CONCEPT_NAME": "Comprehensive Inpatient Rehabilitation Facility",
+              "DOMAIN_ID": "Visit",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CMS Place of Service"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Visit",
+              "CONCEPT_CODE": "315D00000X",
+              "CONCEPT_ID": 38004311,
+              "CONCEPT_NAME": "Inpatient Hospice",
+              "DOMAIN_ID": "Visit",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "NUCC"
             },
             "includeDescendants": true
           }
@@ -2229,16 +455,16 @@
       }
     },
     {
-      "id": 45,
-      "name": "[OHDSI STEMI] non-STEMI ICD concept set",
+      "id": 48,
+      "name": "[OHDSI STEMI] Echocardiogram",
       "expression": {
         "items": [
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Clinical Finding",
-              "CONCEPT_CODE": "401314000",
-              "CONCEPT_ID": 4270024,
-              "CONCEPT_NAME": "Acute non-ST segment elevation myocardial infarction",
+              "CONCEPT_CODE": "169241000",
+              "CONCEPT_ID": 4059699,
+              "CONCEPT_NAME": "Echocardiogram abnormal",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -2250,30 +476,210 @@
           },
           {
             "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Finding",
-              "CONCEPT_CODE": "15960061000119102",
-              "CONCEPT_ID": 36712982,
-              "CONCEPT_NAME": "Unstable angina co-occurrent and due to coronary arteriosclerosis",
-              "DOMAIN_ID": "Condition",
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "0613T",
+              "CONCEPT_ID": 759555,
+              "CONCEPT_NAME": "Percutaneous transcatheter implantation of interatrial septal shunt device, including right and left heart catheterization, intracardiac echocardiography, and imaging guidance by the proceduralist, when performed",
+              "DOMAIN_ID": "Procedure",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
               "STANDARD_CONCEPT": "S",
               "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
+              "VOCABULARY_ID": "CPT4"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "0543T",
+              "CONCEPT_ID": 709890,
+              "CONCEPT_NAME": "Transapical mitral valve repair, including transthoracic echocardiography, when performed, with placement of artificial chordae tendineae",
+              "DOMAIN_ID": "Procedure",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
             },
             "includeDescendants": true
           },
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Context-dependent",
-              "CONCEPT_CODE": "285721000119104",
-              "CONCEPT_ID": 37395582,
-              "CONCEPT_NAME": "History of acute ST segment elevation myocardial infarction",
+              "CONCEPT_CODE": "401000009",
+              "CONCEPT_ID": 4292071,
+              "CONCEPT_NAME": "Echocardiogram requested",
               "DOMAIN_ID": "Observation",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "N",
-              "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "93356",
+              "CONCEPT_ID": 710016,
+              "CONCEPT_NAME": "Myocardial strain imaging using speckle tracking-derived assessment of myocardial mechanics (List separately in addition to codes for echocardiography imaging)",
+              "DOMAIN_ID": "Procedure",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "40701008",
+              "CONCEPT_ID": 4230911,
+              "CONCEPT_NAME": "Echocardiography",
+              "DOMAIN_ID": "Procedure",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "93321",
+              "CONCEPT_ID": 2313880,
+              "CONCEPT_NAME": "Doppler echocardiography, pulsed wave and/or continuous wave with spectral display (List separately in addition to codes for echocardiographic imaging); follow-up or limited study (List separately in addition to codes for echocardiographic imaging)",
+              "DOMAIN_ID": "Procedure",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "93320",
+              "CONCEPT_ID": 2313879,
+              "CONCEPT_NAME": "Doppler echocardiography, pulsed wave and/or continuous wave with spectral display (List separately in addition to codes for echocardiographic imaging); complete",
+              "DOMAIN_ID": "Procedure",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Clinical Finding",
+              "CONCEPT_CODE": "169240004",
+              "CONCEPT_ID": 4060628,
+              "CONCEPT_NAME": "Echocardiogram normal",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "390791001",
+              "CONCEPT_ID": 4305721,
+              "CONCEPT_NAME": "Referral for echocardiography",
+              "DOMAIN_ID": "Observation",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "93325",
+              "CONCEPT_ID": 2313881,
+              "CONCEPT_NAME": "Doppler echocardiography color flow velocity mapping (List separately in addition to codes for echocardiography)",
+              "DOMAIN_ID": "Procedure",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Clinical Finding",
+              "CONCEPT_CODE": "408380008",
+              "CONCEPT_ID": 4252226,
+              "CONCEPT_NAME": "Echocardiogram equivocal",
+              "DOMAIN_ID": "Condition",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Procedure",
+              "CONCEPT_CODE": "703338002",
+              "CONCEPT_ID": 45773079,
+              "CONCEPT_NAME": "Stress echocardiography using dobutamine",
+              "DOMAIN_ID": "Procedure",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "CPT4",
+              "CONCEPT_CODE": "0439T",
+              "CONCEPT_ID": 42628042,
+              "CONCEPT_NAME": "Myocardial contrast perfusion echocardiography, at rest or with stress, for assessment of myocardial ischemia or viability (List separately in addition to code for primary procedure)",
+              "DOMAIN_ID": "Procedure",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "VOCABULARY_ID": "CPT4"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_CLASS_ID": "Observable Entity",
+              "CONCEPT_CODE": "421222001",
+              "CONCEPT_ID": 4222104,
+              "CONCEPT_NAME": "Ultrasonographic echogenicity",
+              "DOMAIN_ID": "Observation",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
               "VOCABULARY_ID": "SNOMED"
             },
             "includeDescendants": true
@@ -2379,129 +785,14 @@
       }
     },
     {
-      "name": "Troponin measurements",
-      "description": "within 0-1 day",
-      "expression": {
-        "Type": "ALL",
-        "CriteriaList": [
-          {
-            "Criteria": {
-              "Measurement": {
-                "CodesetId": 37
-              }
-            },
-            "StartWindow": {
-              "Start": {
-                "Days": 0,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 1,
-                "Coeff": 1
-              },
-              "UseEventEnd": false
-            },
-            "IgnoreObservationPeriod": true,
-            "Occurrence": {
-              "Type": 2,
-              "Count": 1
-            }
-          }
-        ],
-        "DemographicCriteriaList": [],
-        "Groups": []
-      }
-    },
-    {
-      "name": "ECG obtained",
-      "description": "within 0-1 days",
-      "expression": {
-        "Type": "ANY",
-        "CriteriaList": [
-          {
-            "Criteria": {
-              "Measurement": {
-                "CodesetId": 39
-              }
-            },
-            "StartWindow": {
-              "Start": {
-                "Days": 0,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 1,
-                "Coeff": 1
-              },
-              "UseEventEnd": false
-            },
-            "IgnoreObservationPeriod": true,
-            "Occurrence": {
-              "Type": 2,
-              "Count": 1
-            }
-          },
-          {
-            "Criteria": {
-              "ProcedureOccurrence": {
-                "CodesetId": 39
-              }
-            },
-            "StartWindow": {
-              "Start": {
-                "Days": 0,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 1,
-                "Coeff": 1
-              },
-              "UseEventEnd": false
-            },
-            "IgnoreObservationPeriod": true,
-            "Occurrence": {
-              "Type": 2,
-              "Count": 1
-            }
-          },
-          {
-            "Criteria": {
-              "Observation": {
-                "CodesetId": 39
-              }
-            },
-            "StartWindow": {
-              "Start": {
-                "Days": 0,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 1,
-                "Coeff": 1
-              },
-              "UseEventEnd": false
-            },
-            "IgnoreObservationPeriod": true,
-            "Occurrence": {
-              "Type": 2,
-              "Count": 1
-            }
-          }
-        ],
-        "DemographicCriteriaList": [],
-        "Groups": []
-      }
-    },
-    {
-      "name": "PCI with/without stent",
-      "description": "within 0-1 day",
+      "name": "catherization +/- stent placement at day 0 (same visit)",
       "expression": {
         "Type": "ANY",
         "CriteriaList": [
           {
             "Criteria": {
               "ProcedureOccurrence": {
-                "CodesetId": 43
+                "CodesetId": 46
               }
             },
             "StartWindow": {
@@ -2510,12 +801,12 @@
                 "Coeff": -1
               },
               "End": {
-                "Days": 1,
+                "Days": 0,
                 "Coeff": 1
               },
               "UseEventEnd": false
             },
-            "IgnoreObservationPeriod": true,
+            "RestrictVisit": true,
             "Occurrence": {
               "Type": 2,
               "Count": 1
@@ -2524,7 +815,40 @@
           {
             "Criteria": {
               "DeviceExposure": {
-                "CodesetId": 43
+                "CodesetId": 46
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Days": 0,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 0,
+                "Coeff": 1
+              },
+              "UseEventEnd": false
+            },
+            "RestrictVisit": true,
+            "Occurrence": {
+              "Type": 2,
+              "Count": 1
+            }
+          }
+        ],
+        "DemographicCriteriaList": [],
+        "Groups": []
+      }
+    },
+    {
+      "name": "echocardio day 0 same visit",
+      "expression": {
+        "Type": "ANY",
+        "CriteriaList": [
+          {
+            "Criteria": {
+              "ProcedureOccurrence": {
+                "CodesetId": 48
               }
             },
             "StartWindow": {
@@ -2538,7 +862,86 @@
               },
               "UseEventEnd": false
             },
-            "IgnoreObservationPeriod": true,
+            "RestrictVisit": true,
+            "Occurrence": {
+              "Type": 2,
+              "Count": 1
+            }
+          },
+          {
+            "Criteria": {
+              "Observation": {
+                "CodesetId": 48
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Days": 0,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 1,
+                "Coeff": 1
+              },
+              "UseEventEnd": false
+            },
+            "RestrictVisit": true,
+            "Occurrence": {
+              "Type": 2,
+              "Count": 1
+            }
+          },
+          {
+            "Criteria": {
+              "ConditionOccurrence": {
+                "CodesetId": 48
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Days": 0,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 1,
+                "Coeff": 1
+              },
+              "UseEventEnd": false
+            },
+            "RestrictVisit": true,
+            "Occurrence": {
+              "Type": 2,
+              "Count": 1
+            }
+          }
+        ],
+        "DemographicCriteriaList": [],
+        "Groups": []
+      }
+    },
+    {
+      "name": "inpatient visit day 0 (same visit)",
+      "expression": {
+        "Type": "ALL",
+        "CriteriaList": [
+          {
+            "Criteria": {
+              "VisitOccurrence": {
+                "CodesetId": 47
+              }
+            },
+            "StartWindow": {
+              "Start": {
+                "Days": 0,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 0,
+                "Coeff": 1
+              },
+              "UseEventEnd": false
+            },
+            "RestrictVisit": true,
             "Occurrence": {
               "Type": 2,
               "Count": 1

@@ -55,7 +55,7 @@ params:
   version: 0.0.1
 subtitle: 'Version: `r params$version`'
 link-citations: yes
-csl: bmj.cslF
+csl: bmj.csl
 ---
 
 ```{r setup, include=FALSE}
